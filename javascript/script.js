@@ -1,6 +1,8 @@
 const cursor = document.querySelector('.cursor')
 let timeout
 
+// TODO ARRUMAR O CONFLITO DO BODY
+
 // follow cursor on move
 document.addEventListener('mousemove', (e) => {
     let x =  e.pageX
@@ -43,6 +45,6 @@ setTimeout(() => {
     document.querySelector('.pulse').addEventListener('click', () => {
         document.querySelector('.intro').remove()
         document.querySelector('.container').style.display = 'inline'
-        document.body.style.backgroundColor = '#fff'
+        document.body.style.backgroundColor = 'var(--primary-color)'
     })
 }, 1000)
