@@ -228,8 +228,10 @@ main .text button {
   color: var(--primary-color);
   border: none;
   border-radius: 5px;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: bold;
+  font-family: "Consolas";
+  cursor: none;
 }
 main .image img {
   width: 300px;
