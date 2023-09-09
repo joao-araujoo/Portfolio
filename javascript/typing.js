@@ -1,5 +1,5 @@
 new TypeIt(".typing-animate", {
-    speed: 100,
+    speed: 75,
     waitUntilVisible: true,
 }).type('Hey, my name is João Araujo,', {delay: 900})
   .delete(28)

@@ -2,7 +2,6 @@
 
 body {
     min-height: 100vh;
-    cursor: none;
     transition: 1.5s;
     background-color: var(--secondary-color);
 }
@@ -41,34 +40,7 @@ body {
     }
 }
 
-// Cursor style
-.cursor {
-    z-index: 999;
-    position: fixed;
-    background: #2696E8;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    pointer-events: none;
-    box-shadow: 0 0 100px #2696E8,
-                0 0 60px #2696E8,
-                0 0 100px #2696E8;
-    animation: colors 5s infinite;
-    display: none;
-
-    &::before {
-        content: '';
-        position: absolute;
-        background: #2696E8;
-        width: 40px;
-        height: 40px;
-        opacity: 0.2;
-        transform: translate(-25%, -25%);
-        border-radius: 50%;
-    }
-}
-
-// Start button style
+// Start button
 .pulse {
     position: relative;
     width: 180px;
@@ -77,6 +49,7 @@ body {
     justify-content: center;
     align-items: center;
     user-select: none;
+    cursor: pointer;
 
     &::before, &::after {
         content: '';
@@ -97,15 +70,6 @@ body {
 }
 
 // Animations
-@keyframes colors {
-    0% {
-        filter: hue-rotate(0deg);
-    }
-    100% {
-        filter: hue-rotate(360deg);
-    }
-}
-
 @keyframes pulse {
     0% {
         transform: scale(0.3);

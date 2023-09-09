@@ -10,7 +10,6 @@
 
 body {
   min-height: 100vh;
-  cursor: none;
   transition: 1.5s;
   background-color: var(--secondary-color);
 }
@@ -44,29 +43,6 @@ body {
   transform: scale(0.95);
 }
 
-.cursor {
-  z-index: 999;
-  position: fixed;
-  background: #2696E8;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  pointer-events: none;
-  box-shadow: 0 0 100px #2696E8, 0 0 60px #2696E8, 0 0 100px #2696E8;
-  animation: colors 5s infinite;
-  display: none;
-}
-.cursor::before {
-  content: "";
-  position: absolute;
-  background: #2696E8;
-  width: 40px;
-  height: 40px;
-  opacity: 0.2;
-  transform: translate(-25%, -25%);
-  border-radius: 50%;
-}
-
 .pulse {
   position: relative;
   width: 180px;
@@ -75,6 +51,7 @@ body {
   justify-content: center;
   align-items: center;
   user-select: none;
+  cursor: pointer;
 }
 .pulse::before, .pulse::after {
   content: "";
@@ -92,14 +69,6 @@ body {
   animation-delay: -0.5s;
 }
 
-@keyframes colors {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-  }
-}
 @keyframes pulse {
   0% {
     transform: scale(0.3);
@@ -150,7 +119,6 @@ header .navigation a {
   font-size: 15px;
   margin-left: 15px;
   position: relative;
-  cursor: none;
 }
 header .navigation a::after {
   content: "";
@@ -171,7 +139,7 @@ header .navigation .switch-theme-button {
   margin-left: 15px;
 }
 header .navigation .slider {
-  cursor: none;
+  cursor: pointer;
   background-color: #000;
   width: 40px;
   height: 20px;
@@ -231,7 +199,7 @@ main .text button {
   font-size: 15px;
   font-weight: bold;
   font-family: "Consolas";
-  cursor: none;
+  cursor: pointer;
 }
 main .image img {
   width: 300px;
