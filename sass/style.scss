@@ -1,6 +1,10 @@
 @import "root.scss";
 @import "intro.scss";
 
+html {
+    font-size: 62.5%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,11 +22,21 @@
     font-family: "Consolas";
     display: none;
 }
+
+// TODO criar classes comuns para título, parágrafo e botão
+
+.title {
+    font-size: 3rem;
+}
+
+.paragraph {
+    font-size: clamp(1.3rem, 5vw, 2rem);
+}
  
 // Header and Nav
 header {
     width: 100%;
-    padding: 50px;
+    padding: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,8 +54,8 @@ header {
         a {
             text-decoration: none;
             color: var(--secondary-color);
-            font-size: 15px;
-            margin-left: 15px;
+            font-size: 2.3rem;
+            margin-left: 25px;
             position: relative;
             // cursor: none;
 
@@ -72,7 +86,7 @@ header {
             background-color: #000;
             width: 40px;
             height: 20px;
-            border-radius: 20px;
+            border-radius: 2rem;
             position: relative;
         }
 
@@ -104,17 +118,17 @@ header {
     }
 }
 
-// Main section
-main {
+
+//! about me 
+.about-me {
     width: 100%;
-    padding: 50px;
+    padding: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    font-size: 13px;
+    gap: 5rem;
 
-    .text {
+    .text-content {
         width: 50%;
  
         p { 
@@ -127,21 +141,22 @@ main {
             color: var(--secondary-color);
         }
 
+        // TODO estilizar esse botão e criar uma classe para estilização comum
         button {
             margin-top: 15px;
-            padding: 10px 40px;
+            padding: 1rem 4rem;
             background-color: var(--secondary-color);
             color: var(--primary-color);
             border: none;
-            border-radius: 5px;
-            font-size: 15px;
+            border-radius: 0.5rem;
+            font-size: 2rem;
             font-weight: bold;
             font-family: "Consolas";
             cursor: pointer;
         }
     }
 
-    .image img {
+    .image-content img {
         width: 300px;
         height: 330px;
         border-radius: 33% 67% 48% 52%/54% 39% 61% 46%;
@@ -151,7 +166,7 @@ main {
     }
 }
 
-// Animations
+//! Animations
 @keyframes imageAnimation {
     0% {
         border-radius: 71% 29% 55% 45%/54% 56% 44% 46%;
@@ -170,30 +185,35 @@ main {
     }
 }
 
-// Responsiveness
-@media (max-width: 790px) {
+//! Responsiveness
+@media (max-width: 800px) {
     .navigation {
         display: none !important;
     }
+
+    // TODO arrumar esse menu hamburger
     nav::after {
         content: "☰";
         color: var(--secondary-color);
-        font-size: 30px;
+        font-size: 3rem;
     }
-    main {
+
+    .about-me {
         flex-wrap: wrap-reverse;
     }
-    main .text {
+
+    .about-me .text-content {
         width: 100%;
         text-align: center;
     }
-    main .text button {
+
+    .about-me .text-content button {
         width: 100%;
     }
 }
 
 @media (max-width: 425px) {
-    header, main {
-        padding: 20px;
+    header, .about-me {
+        padding: 2rem;
     }
 }

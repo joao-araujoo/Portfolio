@@ -82,6 +82,10 @@ body {
     opacity: 0;
   }
 }
+html {
+  font-size: 62.5%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -99,9 +103,17 @@ body {
   display: none;
 }
 
+.title {
+  font-size: 3rem;
+}
+
+.paragraph {
+  font-size: clamp(1.3rem, 5vw, 2rem);
+}
+
 header {
   width: 100%;
-  padding: 50px;
+  padding: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -116,8 +128,8 @@ header .navigation {
 header .navigation a {
   text-decoration: none;
   color: var(--secondary-color);
-  font-size: 15px;
-  margin-left: 15px;
+  font-size: 2.3rem;
+  margin-left: 25px;
   position: relative;
 }
 header .navigation a::after {
@@ -143,7 +155,7 @@ header .navigation .slider {
   background-color: #000;
   width: 40px;
   height: 20px;
-  border-radius: 20px;
+  border-radius: 2rem;
   position: relative;
 }
 header .navigation #switch-theme {
@@ -169,39 +181,38 @@ header .navigation .toggle-input {
   display: none;
 }
 
-main {
+.about-me {
   width: 100%;
-  padding: 50px;
+  padding: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
-  font-size: 13px;
+  gap: 5rem;
 }
-main .text {
+.about-me .text-content {
   width: 50%;
 }
-main .text p {
+.about-me .text-content p {
   color: var(--font-color);
   text-align: justify;
 }
-main .text h1 {
+.about-me .text-content h1 {
   margin-bottom: 15px;
   color: var(--secondary-color);
 }
-main .text button {
+.about-me .text-content button {
   margin-top: 15px;
-  padding: 10px 40px;
+  padding: 1rem 4rem;
   background-color: var(--secondary-color);
   color: var(--primary-color);
   border: none;
-  border-radius: 5px;
-  font-size: 15px;
+  border-radius: 0.5rem;
+  font-size: 2rem;
   font-weight: bold;
   font-family: "Consolas";
   cursor: pointer;
 }
-main .image img {
+.about-me .image-content img {
   width: 300px;
   height: 330px;
   border-radius: 33% 67% 48% 52%/54% 39% 61% 46%;
@@ -227,29 +238,29 @@ main .image img {
     border-radius: 71% 29% 55% 45%/54% 56% 44% 46%;
   }
 }
-@media (max-width: 790px) {
+@media (max-width: 800px) {
   .navigation {
     display: none !important;
   }
   nav::after {
     content: "☰";
     color: var(--secondary-color);
-    font-size: 30px;
+    font-size: 3rem;
   }
-  main {
+  .about-me {
     flex-wrap: wrap-reverse;
   }
-  main .text {
+  .about-me .text-content {
     width: 100%;
     text-align: center;
   }
-  main .text button {
+  .about-me .text-content button {
     width: 100%;
   }
 }
 @media (max-width: 425px) {
-  header, main {
-    padding: 20px;
+  header, .about-me {
+    padding: 2rem;
   }
 }
 
