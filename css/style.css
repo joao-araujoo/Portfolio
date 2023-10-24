@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 :root {
   --primary-color: #fff;
-  --secondary-color: #000;
+  --secondary-color: #141414;
   --tertiary-color: #c589e8;
-  --font-color: #4b4b4b;
+  --font-color: #3f3f3f;
   --selection-color: rgba(206, 206, 206, 0.8);
 }
 
@@ -84,6 +84,7 @@ body {
 }
 html {
   font-size: 62.5%;
+  user-select: none;
 }
 
 * {
@@ -109,6 +110,20 @@ html {
 
 .paragraph {
   font-size: clamp(1.3rem, 5vw, 2rem);
+  user-select: text;
+}
+
+.button {
+  margin-top: 15px;
+  padding: 1rem 4rem;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Consolas";
+  cursor: pointer;
 }
 
 header {
@@ -121,6 +136,7 @@ header {
 header .logo h1 {
   text-decoration: underline;
   color: var(--secondary-color);
+  font-family: Poppins;
 }
 header .navigation {
   display: flex;
@@ -200,17 +216,24 @@ header .navigation .toggle-input {
   margin-bottom: 15px;
   color: var(--secondary-color);
 }
-.about-me .text-content button {
-  margin-top: 15px;
-  padding: 1rem 4rem;
-  background-color: var(--secondary-color);
+.about-me .text-content .media-links {
+  display: flex;
+  gap: 15px;
+}
+.about-me .text-content .media-links .github-button,
+.about-me .text-content .media-links .linkedin-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.about-me .text-content .media-links .github-button img,
+.about-me .text-content .media-links .linkedin-button img {
+  width: 20px;
+}
+.about-me .text-content .media-links .github-button p,
+.about-me .text-content .media-links .linkedin-button p {
   color: var(--primary-color);
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 2rem;
-  font-weight: bold;
-  font-family: "Consolas";
-  cursor: pointer;
 }
 .about-me .image-content img {
   width: 300px;
@@ -238,7 +261,7 @@ header .navigation .toggle-input {
     border-radius: 71% 29% 55% 45%/54% 56% 44% 46%;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .navigation {
     display: none !important;
   }
@@ -254,8 +277,9 @@ header .navigation .toggle-input {
     width: 100%;
     text-align: center;
   }
-  .about-me .text-content button {
+  .about-me .text-content a {
     width: 100%;
+    padding: 1rem 2rem;
   }
 }
 @media (max-width: 425px) {

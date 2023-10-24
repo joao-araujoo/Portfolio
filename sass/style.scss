@@ -3,6 +3,7 @@
 
 html {
     font-size: 62.5%;
+    user-select: none;
 }
 
 * {
@@ -31,6 +32,20 @@ html {
 
 .paragraph {
     font-size: clamp(1.3rem, 5vw, 2rem);
+    user-select: text;
+}
+
+.button {
+    margin-top: 15px;
+    padding: 1rem 4rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Consolas";
+    cursor: pointer;
 }
  
 // Header and Nav
@@ -45,6 +60,7 @@ header {
         h1 {
             text-decoration: underline;
             color: var(--secondary-color);
+            font-family: Poppins;
         }
     }
 
@@ -141,19 +157,32 @@ header {
             color: var(--secondary-color);
         }
 
-        // TODO estilizar esse botão e criar uma classe para estilização comum
-        button {
-            margin-top: 15px;
-            padding: 1rem 4rem;
-            background-color: var(--secondary-color);
-            color: var(--primary-color);
-            border: none;
-            border-radius: 0.5rem;
-            font-size: 2rem;
-            font-weight: bold;
-            font-family: "Consolas";
-            cursor: pointer;
+        .media-links {
+            display: flex;
+            gap: 15px;
+
+            .github-button,
+            .linkedin-button {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                text-decoration: none;
+    
+                img {
+                    width: 20px;
+                }
+
+                p {
+                    color: var(--primary-color);
+                }
+            }
+
+            // TODO testar cor do linkedin no botão
+            // .linkedin-button {
+            //     background-color: #0077B5;
+            // }
         }
+
     }
 
     .image-content img {
@@ -169,24 +198,24 @@ header {
 //! Animations
 @keyframes imageAnimation {
     0% {
-        border-radius: 71% 29% 55% 45%/54% 56% 44% 46%;
+        border-radius: 71% 29% 55% 45% / 54% 56% 44% 46%;
     }
     25% {
-        border-radius: 21% 79% 26% 74%/69% 19% 81% 31%;
+        border-radius: 21% 79% 26% 74% / 69% 19% 81% 31%;
     }
     50% {
-        border-radius: 55% 45% 58% 42%/44% 76% 24% 56%;
+        border-radius: 55% 45% 58% 42% / 44% 76% 24% 56%;
     }
     75% {
-        border-radius: 28% 72% 51% 49%/60% 46% 54% 40%;
+        border-radius: 28% 72% 51% 49% / 60% 46% 54% 40%;
     }
     100% {
-        border-radius: 71% 29% 55% 45%/54% 56% 44% 46%;
+        border-radius: 71% 29% 55% 45% / 54% 56% 44% 46%;
     }
 }
 
 //! Responsiveness
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .navigation {
         display: none !important;
     }
@@ -207,8 +236,9 @@ header {
         text-align: center;
     }
 
-    .about-me .text-content button {
+    .about-me .text-content a {
         width: 100%;
+        padding: 1rem 2rem;
     }
 }
 
