@@ -1,5 +1,6 @@
 const root = document.querySelector(':root')
-const slider = document.querySelector('.slider')
+const sliders = document.querySelectorAll('.slider')
+let theme = 'light'
 
 const changeRootProperty = (primaryColor, secondaryColor, fontColor, selectionColor) => {
     root.style.setProperty('--primary-color', primaryColor)
@@ -13,12 +14,17 @@ const changeButtonIcons = (githubIcon, linkedinIcon) => {
     document.querySelector('.linkedin-button img').src = linkedinIcon
 }
 
-slider.addEventListener('click', () => {
-    if(document.querySelector('input.toggle-input').checked){
-        changeRootProperty('#fff', '#141414', '#000', 'rgba(206, 206, 206, 0.8)')
-        changeButtonIcons('./assets/icons/github light.png', './assets/icons/linkedin light.png')
-    } else {
+sliders.forEach(slider => {
+    slider.addEventListener('click', () => {
+        if(theme === 'dark') {
+            changeRootProperty('#fff', '#141414', '#000', 'rgba(206, 206, 206, 0.8)')
+            changeButtonIcons('./assets/icons/github light.png', './assets/icons/linkedin light.png')
+            theme = 'light'
+            return 
+        }
+
         changeRootProperty('#141414', '#fff', '#fafafa', 'rgba(53, 53, 53, 0.8)')
         changeButtonIcons('./assets/icons/github dark.png', './assets/icons/linkedin dark.png')
-    }
+        theme = 'dark'
+    })
 })

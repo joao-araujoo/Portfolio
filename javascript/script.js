@@ -24,3 +24,5 @@ const createIntroButton = (div) => {
 setTimeout(() => {
     createIntroDivButton()
 }, 1000)
+
+// TODO modularizar tudo para apenas chamar as funções aqui

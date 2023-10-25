@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 :root {
   --primary-color: #fff;
@@ -85,6 +84,7 @@ body {
 html {
   font-size: 62.5%;
   user-select: none;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -102,6 +102,87 @@ html {
   height: auto;
   font-family: "Consolas";
   display: none;
+}
+
+.menu-hamburger {
+  width: 300px;
+  height: 100vh;
+  padding: 17rem 5rem;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: -100%;
+  transition: 0.3s ease-in-out;
+}
+.menu-hamburger .navigation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.menu-hamburger .navigation a {
+  text-decoration: none;
+  border-bottom: 1px solid #222222;
+  padding: 1rem;
+  color: #fff;
+}
+.menu-hamburger .navigation .switch-theme-button {
+  margin-top: 1rem;
+  color: #fff;
+}
+.menu-hamburger .navigation .switch-theme-button .toggle-wrapper {
+  margin-right: 2rem;
+}
+
+.switch-theme-button {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.slider {
+  cursor: pointer;
+  background-color: #000;
+  width: 41px;
+  height: 22px;
+  border-radius: 2rem;
+  position: relative;
+  border: 1px solid var(--primary-color);
+}
+
+#switch-theme {
+  background-color: #fff;
+  border: 1px solid var(--primary-color);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  pointer-events: none;
+  top: 3px;
+  left: 3px;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle-input:checked ~ .slider {
+  background-color: #fff;
+}
+
+.toggle-input:checked ~ .slider > #switch-theme {
+  background-color: #000;
+  left: 22px;
+}
+
+.toggle-input {
+  display: none;
+}
+
+.section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 5rem;
 }
 
 .title {
@@ -161,45 +242,33 @@ header .navigation a::after {
 header .navigation a:hover::after {
   width: 100%;
 }
-header .navigation .switch-theme-button {
-  display: flex;
-  align-items: center;
-  margin-left: 15px;
-}
-header .navigation .slider {
-  cursor: pointer;
-  background-color: #000;
-  width: 40px;
+header .hamburger {
+  width: 30px;
   height: 20px;
-  border-radius: 2rem;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 2;
 }
-header .navigation #switch-theme {
-  background-color: #fff;
-  border: none;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  pointer-events: none;
-  top: 3px;
-  left: 3px;
-  position: absolute;
-  transition: all 0.3s ease-in-out;
-}
-header .navigation .toggle-input:checked ~ .slider {
-  background-color: #fff;
-}
-header .navigation .toggle-input:checked ~ .slider > #switch-theme {
+header .bar {
+  width: 100%;
+  height: 2px;
   background-color: #000;
-  left: 22px;
+  transition: 0.3s ease-in-out;
 }
-header .navigation .toggle-input {
-  display: none;
+header .change .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-4px, 8px);
+}
+header .change .bar:nth-child(2) {
+  opacity: 0;
+}
+header .change .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-4px, -8px);
 }
 
-.about-me {
-  width: 100%;
-  padding: 5rem;
+.about-me .about-me-container {
+  padding-top: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -244,6 +313,22 @@ header .navigation .toggle-input {
   transition: 0.3s;
 }
 
+.projects {
+  background-color: blue;
+}
+
+.technologies {
+  background-color: green;
+}
+
+.contact {
+  background-color: red;
+}
+
+.have-fun {
+  background-color: yellow;
+}
+
 @keyframes imageAnimation {
   0% {
     border-radius: 71% 29% 55% 45%/54% 56% 44% 46%;
@@ -261,29 +346,33 @@ header .navigation .toggle-input {
     border-radius: 71% 29% 55% 45%/54% 56% 44% 46%;
   }
 }
-@media (max-width: 900px) {
-  .navigation {
+@media (min-width: 900px) {
+  .hamburger {
     display: none !important;
   }
-  nav::after {
-    content: "☰";
-    color: var(--secondary-color);
-    font-size: 3rem;
+}
+@media (max-width: 900px) {
+  header {
+    padding: 2rem;
   }
-  .about-me {
+  .about-me .navigation {
+    display: none !important;
+  }
+  .about-me-container {
+    padding: 0 !important;
     flex-wrap: wrap-reverse;
   }
-  .about-me .text-content {
+  .about-me-container .text-content {
     width: 100%;
     text-align: center;
   }
-  .about-me .text-content a {
+  .about-me-container .text-content a {
     width: 100%;
     padding: 1rem 2rem;
   }
 }
 @media (max-width: 425px) {
-  header, .about-me {
+  .section {
     padding: 2rem;
   }
 }

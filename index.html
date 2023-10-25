@@ -7,13 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Main style -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- Typing animation -->
-    <script crossorigin="anonymous" src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js" defer></script>
-    <script src="javascript/typing.js" defer></script>
-    <!-- Cursor animation -->
-    <script src="javascript/script.js" defer></script>
-    <!-- Switch theme -->
-    <script src="javascript/switch-theme.js" defer></script>
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1106/1106520.png" type="image/x-icon">
     <title>João Araujo - Web Developer</title>
 </head>
@@ -23,17 +16,14 @@
         <h1 class="typing-animate"></h1>
     </div>
     <div class="container">
-        <header>
-            <div class="logo">
-                <h1 class="title">João Araujo</h1>
-            </div>
+        <div class="menu-hamburger" style="right: -100%;">
             <nav>
                 <div class="navigation">
-                    <a href="">sobre mim</a>
-                    <a href="">projetos</a>
-                    <a href="">tecnologias</a>
-                    <a href="">contato</a>
-                    <a href="">have fun</a>
+                    <a href="#about-me">sobre mim</a>
+                    <a href="#projects">projetos</a>
+                    <a href="#technologies">tecnologias</a>
+                    <a href="#contact">contato</a>
+                    <a href="#have-fun">have fun</a>
 
                     <div class="switch-theme-button">
                         <div class="toggle-wrapper">
@@ -44,35 +34,96 @@
                                 </div>
                             </label>
                         </div>
+                        <p>alternar tema</p>
                     </div>
                 </div>
             </nav>
-        </header>
+        </div>
+
         <main>
-            <section class="about-me">
-                <div class="text-content">
-                    <h1 class="title">Sobre mim</h1>
-                    <p class="paragraph">Olá 👋, eu sou o João! Acabo de fazer 16 anos e sou Desenvolvedor Front-End e pretendo ser Desenvolvedor Mobile em um
-                        futuro próximo 👨‍💻. No momento, tenho conhecimentos avançados em HTML, CSS, SASS, JavaScript e Typescript com uma dezena projetos
-                        realizados, estando a procura de uma vaga de estágio para colocar em prática os meus estudos e aprender cada
-                        vez mais realizando trabalhos e projetos em grupo! 🌟</p>
-                    <div class="media-links">
-                        <a href="https://github.com/joao-araujoo" target="_blank" class="button github-button">
-                            <img src="./assets/icons/github light.png" alt="github icon">
-                            <p>Github</p> 
-                        </a>
-                        <a href="https://www.linkedin.com/in/joao-araujoo/" target="_blank" class="button linkedin-button">
-                            <img src="./assets/icons/linkedin light.png" alt="linkedin icon">
-                            <p>Linkedin</p> 
-                        </a>
+            <section class="about-me section" id="about-me">
+                <header>
+                    <div class="logo">
+                        <h1 class="title">João Araujo</h1>
+                    </div>
+                    <nav>
+                        <div class="navigation">
+                            <a href="#about-me">sobre mim</a>
+                            <a href="#projects">projetos</a>
+                            <a href="#technologies">tecnologias</a>
+                            <a href="#contact">contato</a>
+                            <a href="#have-fun">have fun</a>
+        
+                            <div class="switch-theme-button">
+                                <div class="toggle-wrapper">
+                                    <label>
+                                        <input type="checkbox" class="toggle-input">
+                                        <div class="slider">
+                                            <button id="switch-theme"></button>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hamburger">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                    </nav>
+                </header>
+                <div class="about-me-container">
+                    <div class="text-content">
+                        <h1 class="title">Sobre mim</h1>
+                        <p class="paragraph">Olá 👋, eu sou o João! Tenho 16 anos, sou Desenvolvedor Front-End e pretendo ser Desenvolvedor Mobile em um
+                            futuro próximo 👨‍💻. No momento, tenho conhecimentos avançados em HTML, CSS, SASS, JavaScript e Typescript com uma dezena projetos
+                            realizados, estando a procura de uma vaga de estágio para colocar em prática os meus estudos e aprender cada
+                            vez mais realizando trabalhos e projetos em grupo! 🌟</p>
+                        <div class="media-links">
+                            <a href="https://github.com/joao-araujoo" target="_blank" class="button github-button">
+                                <img src="./assets/icons/github light.png" alt="github icon">
+                                <p>Github</p> 
+                            </a>
+                            <a href="https://www.linkedin.com/in/joao-araujoo/" target="_blank" class="button linkedin-button">
+                                <img src="./assets/icons/linkedin light.png" alt="linkedin icon">
+                                <p>Linkedin</p> 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="image-content">
+                        <img src="./assets/joao-picture.png" alt="joao araujo foto">
                     </div>
                 </div>
-                <div class="image-content">
-                    <img src="./assets/joao-picture.png" alt="joao araujo foto">
-                </div>
+            </section>
+
+            <section class="projects section" id="projects">
+
+            </section>
+
+            <section class="technologies section" id="technologies">
+
+            </section>
+
+            <section class="contact section" id="contact">
+
+            </section>
+
+            <section class="have-fun section" id="have-fun">
+
             </section>
         </main>
     </div>
+
+    <!-- Typing animation -->
+    <script crossorigin="anonymous" src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script src="javascript/typing.js"></script>
+    <!-- Menu hamburger -->
+    <script src="./javascript/menu-hamburger.js"></script>
+    <!-- Main script -->
+    <script src="javascript/script.js"></script>
+    <!-- Switch theme -->
+    <script src="javascript/switch-theme.js"></script>
 </body>
 
 </html>
