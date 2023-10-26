@@ -16,7 +16,7 @@ const changeButtonIcons = (githubIcon, linkedinIcon) => {
 
 sliders.forEach(slider => {
     slider.addEventListener('click', () => {
-        if(theme === 'dark') {
+        if (theme === 'dark') {
             changeRootProperty('#fff', '#141414', '#000', 'rgba(206, 206, 206, 0.8)')
             changeButtonIcons('./assets/icons/github light.png', './assets/icons/linkedin light.png')
             theme = 'light'

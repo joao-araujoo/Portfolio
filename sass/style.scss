@@ -50,15 +50,23 @@ html {
             text-decoration: none;
             border-bottom: 1px solid #222222;
             padding: 1rem;
-            color: #fff;
+            color: var(--primary-color);
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
 
         .switch-theme-button {
             margin-top: 1rem;
-            color: #fff;
-
+            color: var(--primary-color);
+            
             .toggle-wrapper {
                 margin-right: 2rem;
+            }
+
+            p {
+                font-size: 2rem;
             }
         }
     }
@@ -162,7 +170,6 @@ header {
             font-size: 2.3rem;
             margin-left: 25px;
             position: relative;
-            // cursor: none;
 
             &::after {
                 content: "";
@@ -195,7 +202,7 @@ header {
     .bar {
         width: 100%;
         height: 2px;
-        background-color: #000;
+        background-color: var(--secondary-color);
         transition: 0.3s ease-in-out;
     }
 
@@ -209,6 +216,10 @@ header {
 
     .change .bar:nth-child(3) {
         transform: rotate(45deg) translate(-4px, -8px);
+    }
+
+    .change-bar-theme {
+        background-color: var(--primary-color) !important;
     }
 }
 
@@ -316,13 +327,13 @@ header {
 }
 
 //! responsiveness
-@media (min-width: 900px) {
+@media (min-width: 1023px) {
     .hamburger {
         display: none !important;
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     header {
         padding: 2rem;
     }
