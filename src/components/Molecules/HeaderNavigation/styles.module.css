@@ -1,0 +1,8 @@
+@import "../../../stylesheets/root.css";
+
+.wrapper > a {
+  margin-right: 20px;
+  color: var(--header-link-color);
+  font-weight: 500;
+  font-size: 11px;
+}
