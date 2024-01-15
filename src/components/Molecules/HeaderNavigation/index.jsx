@@ -5,9 +5,9 @@ export default function HeaderNavigation() {
   return (
     <nav>
       <div className={styles.wrapper}>
-        <Link path="#">About</Link>
-        <Link path="#">Projects</Link>
-        <Link path="#">Contact</Link>
+        <Link path="/about">About</Link>
+        <Link path="/projects">Projects</Link>
+        <Link path="/contact">Contact</Link>
       </div>
     </nav>
   );

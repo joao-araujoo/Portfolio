@@ -1,17 +1,16 @@
-import FooterLink from "./components/Molecules/FooterLink";
-import animateBackground from "./utils/animateBackground";
+import Footer from "./components/Organisms/Footer";
+import Header from "./components/Organisms/Header";
+import Main from "./components/Organisms/Main";
 
 export default function App() {
-  animateBackground();
-
   return (
     <>
-      <h1>Hey, I’m João Araujo, Frontend Developer.</h1>    
-      <FooterLink path="#" text="See More About Me" />
-      <FooterLink path="#" text="Lets Continue To Projects" />
-      <FooterLink path="#" text="Lets Go To My Resume." />
-      <FooterLink path="#" text="Are you convinced to contact me now ?" />
-      <FooterLink path="#" text="Go Back Home" />
+      <Header />
+      <Main>
+        <h1>Hey! I’m João Araujo, Frontend Developer.</h1>
+        <p style={{ marginTop: "15px", marginBottom: "30px" }} className="paragraph">Olá, aqui é o João, um cara de 16 anos apaixonado por transformar ideias em experiências interativas que realmente fazem a diferença. Especializado em Front-End, eu trago toda a energia jovem para o universo da programação, criando interfaces que não apenas funcionam, mas também impressionam.</p>
+        <Footer text="See More About Me" path="#" />
+      </Main>
     </>
   );
 }

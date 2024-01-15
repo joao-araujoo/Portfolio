@@ -1,14 +1,16 @@
 import Link from "../../Atoms/Link";
+import styles from "./styles.module.css";
 
 export default function FooterNavigation() {
   return (
     <nav>
-      <div className="wrapper">
+      <div className={styles.wrapper}>
+        {/* TODO trocar svg por componentes de bibliotecas */}
         <Link path="https://github.com/joao-araujoo">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
+            width="15"
+            height="15"
             viewBox="0 0 24 24"
           >
             <path
@@ -20,8 +22,8 @@ export default function FooterNavigation() {
         <Link path="https://www.linkedin.com/in/joao-araujoo/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
+            width="15"
+            height="15"
             viewBox="0 0 24 24"
           >
             <path
@@ -35,8 +37,8 @@ export default function FooterNavigation() {
         <Link path="https://www.instagram.com/joao.araujoo_/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
+            width="15"
+            height="15"
             viewBox="0 0 24 24"
           >
             <path
@@ -48,8 +50,8 @@ export default function FooterNavigation() {
         <Link path="https://open.spotify.com/user/uxb66upc7ekxdup54a4frat8e?si=992f8ee8344f4d95">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
+            width="15"
+            height="15"
             viewBox="0 0 24 24"
           >
             <path
