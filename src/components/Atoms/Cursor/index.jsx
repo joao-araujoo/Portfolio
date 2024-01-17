@@ -23,21 +23,22 @@ export default function Cursor({ cursorVariant }) {
   }, []);
 
   const variants = {
-    default: { x: position.x - 12, y: position.y - 12 },
+    default: { x: position.x - 15, y: position.y - 15 },
     text: {
-      height: 100,
-      width: 100,
-      x: position.x - 50,
-      y: position.y - 50,
+      height: 150,
+      width: 150,
+      x: position.x - 75,
+      y: position.y - 75,
       backgroundColor: "#fff",
       mixBlendMode: "difference",
       border: "none",
     },
     hover: {
-      height: 14,
-      width: 14,
-      x: position.x - 7,
-      y: position.y - 7,
+      height: 16,
+      width: 16,
+      x: position.x - 8,
+      y: position.y - 8,
+      transition: "100ms all ease-in-out",
       backgroundColor: "rgba(255, 255, 255, 0.2)",
       border: "2px solid #fff",
     },

@@ -9,7 +9,7 @@
 }
 
 ::selection {
-  background-color: #3d3d3d;
+  background-color: #222;
 }
 
 body {
@@ -27,8 +27,8 @@ body {
 .cursor {
   background: none;
   border: 1px solid #c6c6c6;
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   position: fixed;
   top: 0;
@@ -37,12 +37,13 @@ body {
 }
 
 .title {
+  font-size: 30px;
   max-width: fit-content;
 }
 
 .paragraph {
   color: var(--text-color);
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .paragraph:hover .cursor {

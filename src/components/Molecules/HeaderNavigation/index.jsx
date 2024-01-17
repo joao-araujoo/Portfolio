@@ -7,6 +7,7 @@ HeaderNavigation.propTypes = {
   cursorLeave: PropTypes.func
 }
 
+
 export default function HeaderNavigation({ hoverEnter, cursorLeave }) {
   return (
     <nav>
