@@ -3,6 +3,7 @@ import Cursor from "./components/Atoms/Cursor";
 import Footer from "./components/Organisms/Footer";
 import Header from "./components/Organisms/Header";
 import Main from "./components/Organisms/Main";
+import Particle from "./components/Atoms/Particle/Particle";
 
 export default function App() {
   const [cursorVariant, setCursorVariant] = useState("default");
@@ -13,6 +14,8 @@ export default function App() {
 
   return (
     <>
+      <Particle />
+      <h1 className="background-title">Home.</h1>
       <Cursor cursorVariant={cursorVariant} />
       <Header hoverEnter={hoverEnter} cursorLeave={cursorLeave} />
       <Main>
@@ -24,7 +27,7 @@ export default function App() {
           Hey! I’m João Araujo, Frontend Developer.
         </h1>
         <p
-          style={{ marginTop: "15px", marginBottom: "30px" }}
+          style={{ marginTop: "15px", marginBottom: "30px", textAlign: "justify" }}
           className="paragraph"
         >
           Olá, aqui é o João, um cara de 16 anos apaixonado por transformar
