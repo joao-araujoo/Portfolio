@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Cursor from "./components/Atoms/Cursor";
 import Footer from "./components/Organisms/Footer";
 import Header from "./components/Organisms/Header";
@@ -7,6 +7,19 @@ import Particle from "./components/Atoms/Particle/Particle";
 
 export default function App() {
   const [cursorVariant, setCursorVariant] = useState("default");
+
+  // TODO arrumar o som
+  // useEffect(() => {
+  //   const audio = new Audio('/background-song.mp3');
+  //   audio.loop = true;
+  //   audio.volume = 0.05;
+  //   audio.play();
+
+  //   return () => {
+  //     audio.pause();
+  //     audio.currentTime = 0;
+  //   };
+  // }, []);
 
   const textEnter = () => setCursorVariant("text");
   const hoverEnter = () => setCursorVariant("hover");

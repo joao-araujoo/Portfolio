@@ -40,6 +40,7 @@ body {
   pointer-events: none;
 }
 
+/* TODO utilizar uma fonte serifada bem chique */
 .background-title {
   font-size: 120px;
   position: fixed;
