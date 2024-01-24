@@ -1,4 +1,4 @@
-import Link from "../../Atoms/Link";
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import styles from "./styles.module.css";
 
@@ -9,7 +9,7 @@ FooterLink.propTypes = {
 
 export default function FooterLink({ path, text }) {
   return (
-    <Link path={path} className={styles.wrapper}>
+    <Link to={path} className={styles.wrapper}>
       {text}
       <svg
         xmlns="http://www.w3.org/2000/svg"

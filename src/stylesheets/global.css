@@ -1,4 +1,5 @@
 @import "./root.css";
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@400;600;700&display=swap');
 
 * {
   margin: 0;
@@ -6,6 +7,27 @@
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: #fff;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  width: 0em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+body {
+  scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar {
+  width: 0em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
 }
 
 ::selection {
@@ -14,10 +36,6 @@
 
 body {
   background-color: var(--background-color);
-  /* background: -moz-linear-gradient(0deg, rgba(54, 54, 54, 1) 0%, rgba(31, 31, 31, 1) 50%, rgba(20, 20, 20, 1) 100%);
-  background: -webkit-linear-gradient(0deg, rgba(54, 54, 54, 1) 0%, rgba(31, 31, 31, 1) 50%, rgba(20, 20, 20, 1) 100%);
-  background: linear-gradient(0deg, rgba(54, 54, 54, 1) 0%, rgba(31, 31, 31, 1) 50%, rgba(20, 20, 20, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#363636", endColorstr="#141414", GradientType=1); */
   max-width: fit-content;
   height: 100dvh;
   padding: 50px;
@@ -40,9 +58,9 @@ body {
   pointer-events: none;
 }
 
-/* TODO utilizar uma fonte serifada bem chique */
 .background-title {
-  font-size: 120px;
+  font-family: 'Kalnia';
+  font-size: 170px;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -52,6 +70,7 @@ body {
 }
 
 .title {
+  color: #e1e1e1;
   font-size: 30px;
   max-width: fit-content;
 }
@@ -59,6 +78,7 @@ body {
 .paragraph {
   color: var(--text-color);
   font-size: 13px;
+  user-select: text;
 }
 
 .paragraph:hover .cursor {
@@ -69,5 +89,8 @@ body {
 @media (max-width: 425px) {
   body {
     padding: 30px 20px;
+  }
+  .background-title {
+    font-size: 90px;
   }
 }

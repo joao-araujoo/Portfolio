@@ -1,4 +1,4 @@
-import Link from "../../Atoms/Link";
+import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
 import PropTypes from "prop-types";
 
@@ -13,21 +13,21 @@ export default function HeaderNavigation({ hoverEnter, cursorLeave }) {
     <nav>
       <div className={styles.wrapper}>
         <Link
-          path="/about"
+          to="/about"
           onMouseEnter={hoverEnter}
           onMouseLeave={cursorLeave}
         >
           About
         </Link>
         <Link
-          path="/projects"
+          to="/projects"
           onMouseEnter={hoverEnter}
           onMouseLeave={cursorLeave}
         >
           Projects
         </Link>
         <Link
-          path="/contact"
+          to="/contact"
           onMouseEnter={hoverEnter}
           onMouseLeave={cursorLeave}
         >

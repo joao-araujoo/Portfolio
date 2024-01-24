@@ -13,10 +13,6 @@ export default function Particle() {
     });
   }, []);
 
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
-
   const options = useMemo(
     () => ({
       fullScreen: {
@@ -99,7 +95,6 @@ export default function Particle() {
     return (
       <Particles
         id="tsparticles"
-        particlesLoaded={particlesLoaded}
         options={options}
         style={{ zIndex: "-999", position: "absolute", top: 0, left: 0 }}
       />

@@ -1,56 +1,8 @@
-import { useEffect, useState } from "react";
-import Cursor from "./components/Atoms/Cursor";
-import Footer from "./components/Organisms/Footer";
-import Header from "./components/Organisms/Header";
-import Main from "./components/Organisms/Main";
-import Particle from "./components/Atoms/Particle/Particle";
+import { RouterProvider } from "react-router-dom";
+import router from "./router";
 
 export default function App() {
-  const [cursorVariant, setCursorVariant] = useState("default");
-
-  // TODO arrumar o som
-  // useEffect(() => {
-  //   const audio = new Audio('/background-song.mp3');
-  //   audio.loop = true;
-  //   audio.volume = 0.05;
-  //   audio.play();
-
-  //   return () => {
-  //     audio.pause();
-  //     audio.currentTime = 0;
-  //   };
-  // }, []);
-
-  const textEnter = () => setCursorVariant("text");
-  const hoverEnter = () => setCursorVariant("hover");
-  const cursorLeave = () => setCursorVariant("default");
-
   return (
-    <>
-      <Particle />
-      <h1 className="background-title">Home.</h1>
-      <Cursor cursorVariant={cursorVariant} />
-      <Header hoverEnter={hoverEnter} cursorLeave={cursorLeave} />
-      <Main>
-        <h1
-          onMouseEnter={textEnter}
-          onMouseLeave={cursorLeave}
-          className="title"
-        >
-          Hey! I’m João Araujo, Frontend Developer.
-        </h1>
-        <p
-          style={{ marginTop: "15px", marginBottom: "30px", textAlign: "justify" }}
-          className="paragraph"
-        >
-          Olá, aqui é o João, um cara de 16 anos apaixonado por transformar
-          ideias em experiências interativas que realmente fazem a diferença.
-          Especializado em Front-End, eu trago toda a energia jovem para o
-          universo da programação, criando interfaces que não apenas funcionam,
-          mas também impressionam.
-        </p>
-        <Footer text="See More About Me" path="#" />
-      </Main>
-    </>
+    <RouterProvider router={router} />
   );
 }

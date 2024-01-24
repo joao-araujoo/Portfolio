@@ -1,12 +1,12 @@
 import PropTypes from "prop-types";
 import styles from "./styles.module.css";
 
-Link.propTypes = {
+AnchorLink.propTypes = {
   children: PropTypes.any.isRequired,
   path: PropTypes.string.isRequired,
 };
 
-export default function Link({ children, path, ...props }) {
+export default function AnchorLink({ children, path, ...props }) {
   return (
     <a
       target="_blank"
