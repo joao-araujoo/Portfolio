@@ -64,7 +64,7 @@ body {
   position: fixed;
   left: 0;
   bottom: 0;
-  color: rgba(30, 30, 30, .5);
+  color: rgba(255, 255, 255, .05);
   user-select: none;
   z-index: -1;
 }

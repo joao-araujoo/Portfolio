@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+import { loadSlim } from "@tsparticles/slim";
 
 export default function Particle() {
   const [init, setInit] = useState(false);
@@ -17,17 +17,16 @@ export default function Particle() {
     () => ({
       fullScreen: {
         enabled: true,
-        zIndex: -99,
+        zIndex: -999,
+      },
+      background: {
+        color: {
+          value: "",
+        },
       },
       noise: {
         enabled: true,
       },
-      background: {
-        color: {
-          value: "#141414",
-        },
-      },
-      fpsLimit: 144,
       interactivity: {
         events: {
           onClick: {
@@ -49,6 +48,7 @@ export default function Particle() {
           },
         },
       },
+      fpsLimit: 144,
       particles: {
         color: {
           value: "#ffffff",
@@ -57,7 +57,7 @@ export default function Particle() {
           color: "#ffffff",
           distance: 200,
           enable: true,
-          opacity: 0.5,
+          opacity: 0.4,
           width: 1,
         },
         move: {
@@ -67,23 +67,21 @@ export default function Particle() {
             default: "bounce",
           },
           random: false,
-          speed: 5,
+          speed: 3,
           straight: false,
         },
         number: {
           density: {
             enable: true,
+            value_area: 800,
           },
-          value: 80,
+          value: 100,
         },
         opacity: {
           value: 0.5,
         },
-        shape: {
-          type: "triangle",
-        },
         size: {
-          value: { min: 2, max: 5 },
+          value: 2,
         },
       },
       detectRetina: true,
@@ -91,13 +89,28 @@ export default function Particle() {
     []
   );
 
+  const quadriculadoStyle = {
+    position: "fixed",
+    top: 0,
+    left: 0,
+    width: "100vw",
+    height: "100vh",
+    backgroundImage:
+      "linear-gradient(to right, rgba(50, 50, 50, 0.5) 1px, transparent 1px), linear-gradient(to bottom, rgba(50, 50, 50, 0.5) 1px, transparent 1px)",
+    backgroundSize: "50px 50px",
+    zIndex: -1,
+  };
+
   if (init) {
     return (
-      <Particles
-        id="tsparticles"
-        options={options}
-        style={{ zIndex: "-999", position: "absolute", top: 0, left: 0 }}
-      />
+      <>
+        <div style={quadriculadoStyle}></div>
+        <Particles
+          id="tsparticles"
+          options={options}
+          style={{ zIndex: "-999", position: "absolute", top: 0, left: 0 }}
+        />
+      </>
     );
   }
 
