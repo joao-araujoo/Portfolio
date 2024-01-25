@@ -22,6 +22,7 @@ export default function Home() {
           onMouseEnter={textEnter}
           onMouseLeave={cursorLeave}
           className="title"
+          style={{ fontSize: "30px" }}
         >
           Hey! I’m João Araujo, Frontend Developer.
         </h1>
@@ -29,7 +30,6 @@ export default function Home() {
           style={{
             marginTop: "15px",
             marginBottom: "30px",
-            textAlign: "justify",
           }}
           className="paragraph"
         >

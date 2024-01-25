@@ -71,14 +71,24 @@ body {
 
 .title {
   color: #e1e1e1;
-  font-size: 30px;
+  font-size: 50px;
   max-width: fit-content;
+}
+
+.subtitle {
+  color: #e1e1e1;
+  font-size: 20px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .paragraph {
   color: var(--text-color);
   font-size: 13px;
   user-select: text;
+  text-align: justify;
 }
 
 .paragraph:hover .cursor {

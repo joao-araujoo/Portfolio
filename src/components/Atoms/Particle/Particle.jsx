@@ -89,22 +89,22 @@ export default function Particle() {
     []
   );
 
-  const quadriculadoStyle = {
+  const checkeredStyle = {
     position: "fixed",
     top: 0,
     left: 0,
     width: "100vw",
     height: "100vh",
     backgroundImage:
-      "linear-gradient(to right, rgba(50, 50, 50, 0.5) 1px, transparent 1px), linear-gradient(to bottom, rgba(50, 50, 50, 0.5) 1px, transparent 1px)",
-    backgroundSize: "50px 50px",
+      "linear-gradient(to right, rgba(40, 40, 40, 0.5) 1px, transparent 1px), linear-gradient(to bottom, rgba(40, 40, 40, 0.5) 1px, transparent 1px)",
+    backgroundSize: "100px 100px",
     zIndex: -1,
   };
 
   if (init) {
     return (
       <>
-        <div style={quadriculadoStyle}></div>
+        <div style={checkeredStyle}></div>
         <Particles
           id="tsparticles"
           options={options}
