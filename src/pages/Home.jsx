@@ -1,29 +1,21 @@
-import { useState } from "react";
-import Cursor from "../components/Atoms/Cursor";
 import Header from "../components/Organisms/Header";
 import Main from "../components/Organisms/Main";
 import Particle from "../components/Atoms/Particle/Particle";
 
 export default function Home() {
-  const [cursorVariant, setCursorVariant] = useState("default");
-
-  const textEnter = () => setCursorVariant("text");
-  const hoverEnter = () => setCursorVariant("hover");
-  const cursorLeave = () => setCursorVariant("default");
+  document.title = "Home | João Araujo";
 
   return (
     <>
       <Particle />
       <h1 className="background-title">Home.</h1>
-      <Cursor cursorVariant={cursorVariant} />
-      <Header hoverEnter={hoverEnter} cursorLeave={cursorLeave} />
-      <Main footerText="See More About Me" footerPath="/about">
-        <h1
-          onMouseEnter={textEnter}
-          onMouseLeave={cursorLeave}
-          className="title"
-          style={{ fontSize: "30px" }}
-        >
+      <Header />
+      <Main
+        footerText="See More About Me"
+        footerPath="/about"
+        style={{ paddingTop: "200px" }}
+      >
+        <h1 className="title" style={{ fontSize: "30px" }}>
           Hey! I’m João Araujo, Frontend Developer.
         </h1>
         <p

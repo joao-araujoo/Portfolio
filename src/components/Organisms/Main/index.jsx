@@ -8,9 +8,9 @@ Main.propTypes = {
   footerPath: PropTypes.string,
 };
 
-export default function Main({ children, footerText, footerPath }) {
+export default function Main({ children, footerText, footerPath, ...props }) {
   return (
-    <main className={styles.wrapper}>
+    <main className={styles.wrapper} {...props}>
       {children}
       <Footer text={footerText} path={footerPath} />
     </main>

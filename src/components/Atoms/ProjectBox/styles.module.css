@@ -1,0 +1,68 @@
+.wrapper {
+  width: 100%;
+  padding: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.projectBox {
+  width: 49%;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.projectBox img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.projectBox:hover .contentTab {
+  bottom: 0;
+  visibility: visible;
+  opacity: 1;
+}
+
+.contentTab {
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  padding: 10px 20px;
+  bottom: -100%;
+  left: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(200, 200, 200, .1) 100%);
+  transition: all .3s ease-in-out;
+}
+
+.contentTab p {
+  padding: 10px 0;
+  color: #e1e1e1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contentTab span {
+  background-color: #333;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-right: 5px;
+}
+
+@media (max-width: 1100px) {
+  .projectBox {
+    width: 100%;
+  }
+}
+
+@media (max-widht: 768px) {
+  .contentTab {
+    bottom: 0 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+}
