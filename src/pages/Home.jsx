@@ -25,11 +25,10 @@ export default function Home() {
           }}
           className="paragraph"
         >
-          Olá, aqui é o João, um cara de 16 anos apaixonado por transformar
-          ideias em experiências interativas que realmente fazem a diferença.
-          Especializado em Front-End, eu trago toda a energia jovem para o
-          universo da programação, criando interfaces que não apenas funcionam,
-          mas também impressionam.
+          Hello, this is João, a 16-year-old guy passionate about turning ideas
+          into interactive experiences that truly make a difference. Specialized
+          in Front-End, I bring all the youthful energy to the programming
+          world, creating interfaces that not only work but also impress.
         </p>
       </Main>
     </>
