@@ -17,11 +17,11 @@ export default function ProjectBox() {
         <span className={styles.contentTab}>
           <h2>ÉlégantCart</h2>
           <p>
-            Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet. Lorem ipsum
-            dolor sit amet consectetur, adipisicing elit. Accusantium blanditiis
-            error nihil vel ab in facere autem nesciunt minima, eligendi
-            dolorem! Voluptatum dolorum earum quasi, rem natus inventore
-            deserunt. Eligendi.
+            ÉlégantCart is more than just a shopping application; it&apos;s an
+            elegant and modern experience that transforms the act of online
+            shopping into something unique. With thoughtfully crafted design,
+            intuitive features, and a user-friendly interface, ÉlégantCart
+            redefines how we explore and acquire products.
           </p>
           <p>
             <span>React.js</span>
@@ -41,13 +41,7 @@ export default function ProjectBox() {
         />
         <span className={styles.contentTab}>
           <h2>Pretty Todo List</h2>
-          <p>
-            Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet. Lorem ipsum
-            dolor sit amet consectetur, adipisicing elit. Accusantium blanditiis
-            error nihil vel ab in facere autem nesciunt minima, eligendi
-            dolorem! Voluptatum dolorum earum quasi, rem natus inventore
-            deserunt. Eligendi.
-          </p>
+          <p>Pretty Todo List is a modern to-do list with lot of functions.</p>
           <p>
             <span>HTML</span>
             <span>CSS</span>
@@ -68,11 +62,8 @@ export default function ProjectBox() {
         <span className={styles.contentTab}>
           <h2>Pretty Advice</h2>
           <p>
-            Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet. Lorem ipsum
-            dolor sit amet consectetur, adipisicing elit. Accusantium blanditiis
-            error nihil vel ab in facere autem nesciunt minima, eligendi
-            dolorem! Voluptatum dolorum earum quasi, rem natus inventore
-            deserunt. Eligendi.
+            Advice generator with consumption of an API, in addition to having a
+            beautiful interactive card and design
           </p>
           <p>
             <span>HTML</span>
@@ -92,13 +83,7 @@ export default function ProjectBox() {
         />
         <span className={styles.contentTab}>
           <h2>Pretty Daily Weather</h2>
-          <p>
-            Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet. Lorem ipsum
-            dolor sit amet consectetur, adipisicing elit. Accusantium blanditiis
-            error nihil vel ab in facere autem nesciunt minima, eligendi
-            dolorem! Voluptatum dolorum earum quasi, rem natus inventore
-            deserunt. Eligendi.
-          </p>
+          <p>Weather website with consumption of API&apos;s</p>
           <p>
             <span>HTML</span>
             <span>CSS</span>
@@ -118,11 +103,8 @@ export default function ProjectBox() {
         <span className={styles.contentTab}>
           <h2>Post Page</h2>
           <p>
-            Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet. Lorem ipsum
-            dolor sit amet consectetur, adipisicing elit. Accusantium blanditiis
-            error nihil vel ab in facere autem nesciunt minima, eligendi
-            dolorem! Voluptatum dolorum earum quasi, rem natus inventore
-            deserunt. Eligendi.
+            Interactive platform for sharing posts with a social media-like
+            experience and a range of functionalities
           </p>
           <p>
             <span>HTML</span>
@@ -143,13 +125,7 @@ export default function ProjectBox() {
         />
         <span className={styles.contentTab}>
           <h2>AMD Copy</h2>
-          <p>
-            Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet. Lorem ipsum
-            dolor sit amet consectetur, adipisicing elit. Accusantium blanditiis
-            error nihil vel ab in facere autem nesciunt minima, eligendi
-            dolorem! Voluptatum dolorum earum quasi, rem natus inventore
-            deserunt. Eligendi.
-          </p>
+          <p>Detailed copy of AMD website and fully responsive</p>
           <p>
             <span>HTML</span>
             <span>CSS</span>
@@ -169,13 +145,7 @@ export default function ProjectBox() {
         />
         <span className={styles.contentTab}>
           <h2>Notes</h2>
-          <p>
-            Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet. Lorem ipsum
-            dolor sit amet consectetur, adipisicing elit. Accusantium blanditiis
-            error nihil vel ab in facere autem nesciunt minima, eligendi
-            dolorem! Voluptatum dolorum earum quasi, rem natus inventore
-            deserunt. Eligendi.
-          </p>
+          <p>Project focused on the design and use of the modal</p>
           <p>
             <span>HTML</span>
             <span>CSS</span>
@@ -196,11 +166,8 @@ export default function ProjectBox() {
         <span className={styles.contentTab}>
           <h2>Breaking Bad</h2>
           <p>
-            Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet. Lorem ipsum
-            dolor sit amet consectetur, adipisicing elit. Accusantium blanditiis
-            error nihil vel ab in facere autem nesciunt minima, eligendi
-            dolorem! Voluptatum dolorum earum quasi, rem natus inventore
-            deserunt. Eligendi.
+            Website inspired by the breaking bad logo, which locates chemical
+            elements in the titles
           </p>
           <p>
             <span>HTML</span>
