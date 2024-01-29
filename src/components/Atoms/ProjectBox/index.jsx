@@ -36,7 +36,7 @@ export default function ProjectBox() {
       >
         <img
           loading="lazy"
-          src="https://private-user-images.githubusercontent.com/113838517/268509571-521ee2e5-11be-4b39-84ba-f85d55690b6d.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDYyNzY0NzYsIm5iZiI6MTcwNjI3NjE3NiwicGF0aCI6Ii8xMTM4Mzg1MTcvMjY4NTA5NTcxLTUyMWVlMmU1LTExYmUtNGIzOS04NGJhLWY4NWQ1NTY5MGI2ZC5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTI2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDEyNlQxMzM2MTZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01YjI1YzRiZDZlYTg2YWExMzQ1ZGQwYWU4OGEzZjNmMTY0YWY0MDVlNzQzNTA2NDVmYjJlOWMzY2MwZjlhNzgwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.WWjOUM8BeHsgBc6Ro0wc4ftkhrmB1wrhhuLxEm433Fg"
+          src="https://github.com/joao-araujoo/Projects/assets/113838517/38dcc4bb-558a-4ca3-b8b7-d61f070e22db"
           alt="Pretty Todo List - João Araujo's Project"
         />
         <span className={styles.contentTab}>

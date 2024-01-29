@@ -1,10 +1,8 @@
-Header 
-  - Logo
-  - Links (Nav)
-  - Switch Theme Button / Translate
+## Todo
 
-Main content
-
-Footer
-  - Link to next page
-  - Social Media links
+- Componentizar
+- Refatorar
+- Adicionar hover aos header links
+- Procurar outra API de notícias ou fazer outra coisa para o corinthians
+- Melhorar o display de filmes
+- Criar modal dos projetos
