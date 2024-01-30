@@ -1,5 +1,5 @@
 import Particle from "../components/Atoms/Particle/Particle";
-import ProjectBox from "../components/Atoms/ProjectBox";
+import ProjectsContainer from "../components/Molecules/ProjectsContainer";
 import Header from "../components/Organisms/Header";
 import Main from "../components/Organisms/Main";
 
@@ -16,7 +16,7 @@ export default function Projects() {
         footerPath="/contact"
       >
         <h1 className="title">Projects.</h1>
-        <ProjectBox />
+        <ProjectsContainer />
       </Main>
     </>
   );

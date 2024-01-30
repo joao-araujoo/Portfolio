@@ -7,7 +7,7 @@ import { BiSolidCameraMovie } from "react-icons/bi";
 import { TbCodeDots } from "react-icons/tb";
 import { FaSpotify, FaCode } from "react-icons/fa";
 import TechnologiesContainer from "../components/Molecules/TechnologiesContainer";
-import CorinthiansNews from "../components/Atoms/CorinthiansNews";
+// import CorinthiansNews from "../components/Atoms/CorinthiansNews";
 
 export default function About() {
   document.title = "About | João Araujo";
@@ -52,11 +52,12 @@ export default function About() {
         </h3>
         <MoviesContainer />
 
-        <h3 className="subtitle">
+        {/* TODO arrumar/remover/procurar outra alternativa para esta seção */}
+        {/* <h3 className="subtitle">
           Corinthians Now.
           <img src="/corinthians.svg" alt="" style={{width: "25px" }} />
         </h3>
-        <CorinthiansNews />
+        <CorinthiansNews /> */}
       </Main>
     </>
   );
