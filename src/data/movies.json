@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "pathToPoster": "/posters/karate kid.jpg",
+    "altText": "Karate Kid Poster"
+  },
+  {
+    "id": 2,
+    "pathToPoster": "/posters/the green mile.jpg",
+    "altText": "The Green Mile Poster"
+  },
+  {
+    "id": 3,
+    "pathToPoster": "/posters/singin in the rain.jpg",
+    "altText": "Singin In The Rain Poster"
+  },
+  {
+    "id": 4,
+    "pathToPoster": "/posters/howls moving castle.jpg",
+    "altText": "Howls Moving Castle Poster"
+  },
+  {
+    "id": 5,
+    "pathToPoster": "/posters/come and see.jpg",
+    "altText": "Come And See Poster"
+  },
+  {
+    "id": 6,
+    "pathToPoster": "/posters/django unchained.jpg",
+    "altText": "Django Unchained Poster"
+  },
+  {
+    "id": 7,
+    "pathToPoster": "/posters/charlie and the chocolate factory.jpg",
+    "altText": "Charlie And The Chocolate Factory Poster"
+  }
+]

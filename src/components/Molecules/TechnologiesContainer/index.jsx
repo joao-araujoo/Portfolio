@@ -1,43 +1,35 @@
 import { IoLogoJavascript } from "react-icons/io5";
-import { FaHtml5, FaCss3Alt, FaSass, FaReact, FaNodeJs, FaGitAlt } from "react-icons/fa";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaSass,
+  FaReact,
+  FaNodeJs,
+  FaGitAlt,
+} from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import styles from "./styles.module.css";
 import Technology from "../../Atoms/Technology";
 
+const technologiesData = [
+  { id: 1, name: "HTML", icon: <FaHtml5 size="100" /> },
+  { id: 2, name: "CSS", icon: <FaCss3Alt size="100" /> },
+  { id: 3, name: "Sass", icon: <FaSass size="100" /> },
+  { id: 4, name: "Javascript", icon: <IoLogoJavascript size="100" /> },
+  { id: 5, name: "Git", icon: <FaGitAlt size="100" /> },
+  { id: 6, name: "React.js", icon: <FaReact size="100" /> },
+  { id: 7, name: "Node.js", icon: <FaNodeJs size="100" /> },
+  { id: 8, name: "MongoDB", icon: <SiMongodb size="100" /> },
+];
+
 export default function TechnologiesContainer() {
   return (
     <div className={styles.wrapper} style={{ paddingTop: "30px" }}>
-      <Technology name="HTML">
-        <FaHtml5 size="100" />
-      </Technology>
-
-      <Technology name="CSS">
-        <FaCss3Alt size="100" />
-      </Technology>
-
-      <Technology name="Sass">
-        <FaSass size="100" />
-      </Technology>
-
-      <Technology name="Javascript">
-        <IoLogoJavascript size="100" />
-      </Technology>
-
-      <Technology name="Git">
-        <FaGitAlt size="100" />
-      </Technology>
-
-      <Technology name="React.js">
-        <FaReact size="100" />
-      </Technology>
-
-      <Technology name="Node.js">
-        <FaNodeJs size="100" />
-      </Technology>
-
-      <Technology name="MongoDB">
-        <SiMongodb size="100" />
-      </Technology>
+      {technologiesData.map((technology) => (
+        <Technology key={technology.id} name={technology.name}>
+          {technology.icon}
+        </Technology>
+      ))}
     </div>
   );
 }

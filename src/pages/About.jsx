@@ -46,7 +46,7 @@ export default function About() {
         </h3>
         <MusicsContainer />
 
-        <h3 className="subtitle" style={{marginTop: "20px"}}>
+        <h3 className="subtitle" style={{marginTop: "30px"}}>
           My Movies.
           <BiSolidCameraMovie />
         </h3>
