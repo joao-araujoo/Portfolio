@@ -13,10 +13,9 @@ export default function ContactForm() {
         <input type="text" name="name"placeholder="Name" className={styles.input} required />
         <input type="email" name="email" placeholder="Email" className={styles.input} required />
         <textarea name="message" placeholder="Message" rows="5" className={styles.textarea} required></textarea>
-        <input type="hidden" name="_captcha" value={false} />
-        {/* TODO criar página de obrigado */}
-        {/* <input type="hidden" name="_next" value="http://localhost:5173/contact" /> */}
         <button type="submit" className={styles.submitButton}>Send Message</button>
+        <input type="hidden" name="_captcha" value={false} />
+        <input type="hidden" name="_next" value="http://localhost:5173/thanks" />
       </form>
     </>
   );

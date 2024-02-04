@@ -13,7 +13,6 @@ export default function Contact() {
       <Header />
       <Main footerText="Go Back Home" footerPath="/">
         <h1 className="title">Contact.</h1>
-
         <ContactForm />
       </Main>
     </>
