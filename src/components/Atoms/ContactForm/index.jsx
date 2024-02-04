@@ -15,7 +15,7 @@ export default function ContactForm() {
         <textarea name="message" placeholder="Message" rows="5" className={styles.textarea} required></textarea>
         <button type="submit" className={styles.submitButton}>Send Message</button>
         <input type="hidden" name="_captcha" value={false} />
-        <input type="hidden" name="_next" value="http://localhost:5173/thanks" />
+        <input type="hidden" name="_next" value="https://joaoaraujo.vercel.app/thanks" />
       </form>
     </>
   );
