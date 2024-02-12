@@ -9,6 +9,14 @@
   },
   {
     "id": 2,
+    "repositoryLink": "https://github.com/joao-araujoo/Projects/tree/main/DAD%20Console",
+    "media": "https://github.com/joao-araujoo/Projects/assets/113838517/efc3b060-3a38-4093-a043-c97e73dbdb5b",
+    "name": "DAD Console",
+    "description": "Embark on an exhilarating coding journey with the DAD Console, a command-line interface project that goes beyond the ordinary. Seamlessly traverse file systems, manage directories, and execute commands in a sleek, modern environment. Elevate your coding experience with the Node.js interactive mode, transforming each command into a step towards enhanced efficiency and innovation. Explore the console's captivating aesthetics and dive into a world where traditional command-line interfaces meet contemporary design. The DAD Console is not just a project; it's an immersive experience that turns coding into a creative and motivating endeavor.",
+    "technologies": ["HTML", "CSS", "Javascript"]
+  },
+  {
+    "id": 3,
     "repositoryLink": "https://github.com/joao-araujoo/Projects/tree/main/Todo%20List",
     "media": "https://github.com/joao-araujoo/Projects/assets/113838517/38dcc4bb-558a-4ca3-b8b7-d61f070e22db",
     "name": "Pretty Todo List",
@@ -16,7 +24,7 @@
     "technologies": ["HTML", "CSS", "Sass", "Javascript"]
   },
   {
-    "id": 3,
+    "id": 4,
     "repositoryLink": "https://github.com/joao-araujoo/Projects/tree/main/Advice%20generator",
     "media": "https://github.com/joao-araujoo/Projects/assets/113838517/166f4ed3-2d38-4252-8a8f-4e849d2378c6",
     "name": "Pretty Advice",
@@ -24,7 +32,7 @@
     "technologies": ["HTML", "CSS", "Javascript"]
   },
   {
-    "id": 4,
+    "id": 5,
     "repositoryLink": "https://github.com/joao-araujoo/Projects/tree/main/Weather%20App",
     "media": "https://github.com/joao-araujoo/Projects/assets/113838517/5372d55b-c452-4408-bd70-ca25c08ff274",
     "name": "Pretty Daily Weather",
@@ -32,7 +40,7 @@
     "technologies": ["HTML", "CSS", "Javascript"]
   },
   {
-    "id": 5,
+    "id": 6,
     "repositoryLink": "https://github.com/joao-araujoo/Projects/tree/main/Posts%20page",
     "media": "https://user-images.githubusercontent.com/113838517/219951635-db56e9a3-f575-4598-b7ed-3d7445558d54.gif",
     "name": "Post Page",
@@ -40,7 +48,7 @@
     "technologies": ["HTML", "CSS", "Sass", "Javascript"]
   },
   {
-    "id": 6,
+    "id": 7,
     "repositoryLink": "https://github.com/joao-araujoo/Projects/tree/main/AMD%20copy",
     "media": "https://user-images.githubusercontent.com/113838517/219908491-4204818e-df4a-456e-a22f-2b1e761f2f8e.gif",
     "name": "AMD Copy",
@@ -48,7 +56,7 @@
     "technologies": ["HTML", "CSS", "Sass", "Javascript"]
   },
   {
-    "id": 7,
+    "id": 8,
     "repositoryLink": "https://github.com/joao-araujoo/Projects/tree/main/Notes",
     "media": "https://user-images.githubusercontent.com/113838517/221418393-c97917a9-9886-4406-8106-6a82e7cbeced.gif",
     "name": "Notes",
@@ -56,7 +64,7 @@
     "technologies": ["HTML", "CSS", "Sass", "Javascript"]
   },
   {
-    "id": 8,
+    "id": 9,
     "repositoryLink": "https://github.com/joao-araujoo/Projects/tree/main/Breaking%20Bad",
     "media": "https://github.com/joao-araujoo/Projects/assets/113838517/7a24278e-15dc-4ac8-82a7-f163d5fae261",
     "name": "Breaking Bad",

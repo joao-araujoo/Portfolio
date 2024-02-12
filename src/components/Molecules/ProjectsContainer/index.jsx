@@ -1,5 +1,6 @@
 import Project from "../../Atoms/Project";
 import styles from "./styles.module.css";
+// TODO salvar mídia localmente
 import projectsData from "../../../data/projects.json";
 
 export default function ProjectsContainer() {

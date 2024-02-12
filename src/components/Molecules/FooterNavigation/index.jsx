@@ -1,9 +1,7 @@
 import AnchorLink from "../../Atoms/AnchorLink";
 import styles from "./styles.module.css";
 import { FaGithub, FaLinkedin, FaInstagram, FaSpotify, FaWhatsapp } from "react-icons/fa";
-import { HiDocumentArrowDown } from "react-icons/hi2";
 import { HiOutlineDocumentArrowDown } from "react-icons/hi2";
-
 
 export default function FooterNavigation() {
   return (
