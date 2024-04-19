@@ -23,7 +23,7 @@ export default function FooterNavigation() {
           <FaSpotify color="#c6c6c6" />
         </AnchorLink>
         <AnchorLink
-          path="/Curriculo - João Pedro Araujo Costa.pdf"
+          path="/CV - João Pedro Araujo Costa.pdf"
           download="CV - João Pedro Araujo Costa"
         >
           <HiOutlineDocumentArrowDown color="#c6c6c6" />
