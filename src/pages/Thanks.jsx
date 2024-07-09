@@ -13,7 +13,7 @@ export default function Thanks() {
         <h1 className="title" style={{ textAlign: "center", margin: "30px auto" }}>
           <MdOutlineMarkEmailRead size={200} />
           <br />
-          Thanks for submitting!
+          Obrigado por entrar em contato!
         </h1>
       </Main>
     </>

@@ -8,7 +8,8 @@ export default function ContactForm() {
         method="POST" 
         className={styles.wrapper}
       >
-        <p className="paragraph"style={{margin: "20px 0"}}>Feel free to <strong>reach out</strong> and share your <strong>thoughts</strong>. I look forward to <strong>hearing</strong> from you!</p>
+        <p className="paragraph"style={{margin: "20px 0"}}>Fique à vontade para <strong>entrar em contato</strong> e compartilhar suas <strong>ideias</strong>. Estou ansioso para <strong>ouvir</strong> de você!
+        </p>
         
         <input type="text" name="name"placeholder="Name" className={styles.input} required />
         <input type="email" name="email" placeholder="Email" className={styles.input} required />

@@ -8,7 +8,7 @@ export default function MusicIframe({ MusicId, ...props }) {
   return (
     <iframe
       style={{ borderRadius: "12px" }}
-      src={`https://open.spotify.com/embed/track/${MusicId}?utm_source=generator`}
+      src={`https://open.spotify.com/embed/track/${MusicId}?utm_source=generator&theme=0`}
       width="100%"
       height="152"
       frameBorder="0"

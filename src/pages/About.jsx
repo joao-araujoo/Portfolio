@@ -25,13 +25,12 @@ export default function About() {
           <TbCodeDots />
         </h3>
         <p className="paragraph" style={{ marginTop: "10px" }}>
-          I&apos;m João, a 16-year-old front-end developer. I work with HTML,
-          CSS, JavaScript (sometimes TypeScript), React, Node.js, and MongoDB.
-          My thing is creating websites and apps that work well and look cool.
-          When I&apos;m not in coding mode, I&apos;m watching movies, exploring
-          new music styles, and cheering for Corinthians. I&apos;m just a
-          regular guy, always open to collaborating on cool projects. Ready to
-          build something together?
+          Trabalho com HTML, CSS, SASS, JavaScript (TypeScript quando
+          necessário), React, Node.js e MongoDB. Meu foco é criar aplicações web
+          que resolvam problemas e tenham uma interface incrível. Quando não
+          estou codando, estou assistindo filmes, explorando novos estilos
+          musicais e torcendo pro Timão 🖤🤍🦅. Pronto para construirmos algo
+          juntos?
         </p>
 
         <h3 className="subtitle">
@@ -46,7 +45,7 @@ export default function About() {
         </h3>
         <MusicsContainer />
 
-        <h3 className="subtitle" style={{marginTop: "30px"}}>
+        <h3 className="subtitle" style={{ marginTop: "30px" }}>
           My Movies.
           <BiSolidCameraMovie />
         </h3>
