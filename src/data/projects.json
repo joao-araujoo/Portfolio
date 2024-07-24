@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "repositoryLink": "https://github.com/joao-araujoo/Projects/tree/main/%C3%89l%C3%A9gantCart",
+    "repositoryLink": "https://elegantcart.vercel.app/",
     "media": "https://github.com/joao-araujoo/Projects/assets/113838517/66978d07-da34-4fc9-8b91-b506331233d4",
     "name": "ÉlégantCart",
     "description": "ÉlégantCart is more than just a shopping application; it's an elegant and modern experience that transforms the act of online shopping into something unique. With thoughtfully crafted design, intuitive features, and a user-friendly interface, ÉlégantCart redefines how we explore and acquire products.",
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "repositoryLink": "https://github.com/joao-araujoo/Projects/tree/main/DAD%20Console",
+    "repositoryLink": "https://dad-console.vercel.app/",
     "media": "https://github.com/joao-araujoo/Projects/assets/113838517/7d91ed29-ef11-4f7c-90be-0151017682e1",
     "name": "DAD Console",
     "description": "Embark on an exhilarating coding journey with the DAD Console, a command-line interface project that goes beyond the ordinary. Seamlessly traverse file systems, manage directories, and execute commands in a sleek, modern environment. Elevate your coding experience with the Node.js interactive mode, transforming each command into a step towards enhanced efficiency and innovation. Explore the console's captivating aesthetics and dive into a world where traditional command-line interfaces meet contemporary design. The DAD Console is not just a project; it's an immersive experience that turns coding into a creative and motivating endeavor.",
@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "repositoryLink": "https://github.com/joao-araujoo/Projects/tree/main/Todo%20List",
+    "repositoryLink": "https://pretty-todo-list.netlify.app/",
     "media": "https://github.com/joao-araujoo/Projects/assets/113838517/38dcc4bb-558a-4ca3-b8b7-d61f070e22db",
     "name": "Pretty Todo List",
     "description": "Pretty Todo List is a modern to-do list with a lot of functions.",
@@ -25,7 +25,7 @@
   },
   {
     "id": 4,
-    "repositoryLink": "https://github.com/joao-araujoo/Projects/tree/main/Advice%20generator",
+    "repositoryLink": "https://pretty-advice.netlify.app/",
     "media": "https://github.com/joao-araujoo/Projects/assets/113838517/166f4ed3-2d38-4252-8a8f-4e849d2378c6",
     "name": "Pretty Advice",
     "description": "Advice generator with consumption of an API, in addition to having a beautiful interactive card and design",
@@ -33,7 +33,7 @@
   },
   {
     "id": 5,
-    "repositoryLink": "https://github.com/joao-araujoo/Projects/tree/main/Weather%20App",
+    "repositoryLink": "https://pretty-dailyweather.netlify.app/",
     "media": "https://github.com/joao-araujoo/Projects/assets/113838517/5372d55b-c452-4408-bd70-ca25c08ff274",
     "name": "Pretty Daily Weather",
     "description": "Weather website with consumption of APIs",
@@ -41,7 +41,7 @@
   },
   {
     "id": 6,
-    "repositoryLink": "https://github.com/joao-araujoo/Projects/tree/main/Posts%20page",
+    "repositoryLink": "https://freeposts-page.netlify.app/",
     "media": "https://user-images.githubusercontent.com/113838517/219951635-db56e9a3-f575-4598-b7ed-3d7445558d54.gif",
     "name": "Post Page",
     "description": "Interactive platform for sharing posts with a social media-like experience and a range of functionalities",
@@ -49,7 +49,7 @@
   },
   {
     "id": 7,
-    "repositoryLink": "https://github.com/joao-araujoo/Projects/tree/main/AMD%20copy",
+    "repositoryLink": "https://amd-copy.netlify.app/",
     "media": "https://user-images.githubusercontent.com/113838517/219908491-4204818e-df4a-456e-a22f-2b1e761f2f8e.gif",
     "name": "AMD Copy",
     "description": "Detailed copy of AMD website and fully responsive",
@@ -57,7 +57,7 @@
   },
   {
     "id": 8,
-    "repositoryLink": "https://github.com/joao-araujoo/Projects/tree/main/Notes",
+    "repositoryLink": "https://minimalist-notes.netlify.app/",
     "media": "https://user-images.githubusercontent.com/113838517/221418393-c97917a9-9886-4406-8106-6a82e7cbeced.gif",
     "name": "Notes",
     "description": "Project focused on the design and use of the modal",
@@ -65,7 +65,7 @@
   },
   {
     "id": 9,
-    "repositoryLink": "https://github.com/joao-araujoo/Projects/tree/main/Breaking%20Bad",
+    "repositoryLink": "https://breaking-bad-elements.netlify.app/",
     "media": "https://github.com/joao-araujoo/Projects/assets/113838517/7a24278e-15dc-4ac8-82a7-f163d5fae261",
     "name": "Breaking Bad",
     "description": "Website inspired by the Breaking Bad logo, which locates chemical elements in the titles",
