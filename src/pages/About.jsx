@@ -10,23 +10,22 @@ import TechnologiesContainer from "../components/Molecules/TechnologiesContainer
 // import CorinthiansNews from "../components/Atoms/CorinthiansNews";
 
 export default function About() {
-  document.title = "About | João Araujo";
+  document.title = "Sobre | João Araujo";
 
   return (
     <>
       <Particle />
-      <h1 className="background-title">About.</h1>
+      <h1 className="background-title">Sobre.</h1>
       <Header />
-      <Main footerText="Lets Continue To Projects" footerPath="/projects">
-        <h1 className="title">About Me.</h1>
+      <Main footerText="Continuar Para Os Projetos" footerPath="/projects">
+        <h1 className="title">Sobre mim.</h1>
 
         <h3 className="subtitle">
-          What I Do?
+          O que eu faço?
           <TbCodeDots />
         </h3>
         <p className="paragraph" style={{ marginTop: "10px" }}>
-          Trabalho com HTML, CSS, SASS, JavaScript (TypeScript quando
-          necessário), React, Node.js e MongoDB. Meu foco é criar aplicações web
+          Trabalho com HTML, CSS, SASS, JavaScript, TypeScript, React, Node.js e MongoDB. Meu foco é criar aplicações web
           que resolvam problemas e tenham uma interface incrível. Quando não
           estou codando, estou assistindo filmes, explorando novos estilos
           musicais e torcendo pro Timão 🖤🤍🦅. Pronto para construirmos algo
@@ -34,19 +33,19 @@ export default function About() {
         </p>
 
         <h3 className="subtitle">
-          Tech Stack.
+          Tecnologias.
           <FaCode />
         </h3>
         <TechnologiesContainer />
 
         <h3 className="subtitle">
-          My Musics.
+          Minhas músicas.
           <FaSpotify />
         </h3>
         <MusicsContainer />
 
         <h3 className="subtitle" style={{ marginTop: "30px" }}>
-          My Movies.
+          Meus filmes.
           <BiSolidCameraMovie />
         </h3>
         <MoviesContainer />

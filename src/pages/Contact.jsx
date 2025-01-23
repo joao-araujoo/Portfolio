@@ -9,10 +9,10 @@ export default function Contact() {
   return (
     <>
       <Particle />
-      <h1 className="background-title">Contact.</h1>
+      <h1 className="background-title">Contato.</h1>
       <Header />
-      <Main footerText="Go Back Home" footerPath="/">
-        <h1 className="title">Contact.</h1>
+      <Main footerText="Voltar Para Home" footerPath="/">
+        <h1 className="title">Contato.</h1>
         <ContactForm />
       </Main>
     </>
