@@ -4,6 +4,13 @@ import Particle from "../components/Atoms/Particle/Particle";
 
 export default function Home() {
   document.title = "Home | João Araujo";
+  const age =
+    new Date() - new Date("2007-02-19") < 0
+      ? -1
+      : new Date().getFullYear() -
+        new Date("2007-02-19").getFullYear() -
+        (new Date().setFullYear(1970) <
+          new Date("2007-02-19").setFullYear(1970));
 
   return (
     <>
@@ -25,7 +32,7 @@ export default function Home() {
           }}
           className="paragraph"
         >
-          Me chamo João, um jovem de 17 anos apaixonado por transformar
+          Me chamo João, um jovem de {age} anos apaixonado por transformar
           ideias em experiências interativas que realmente fazem a diferença.
           Especializado em Front-End, trago entusiasmo e inovação para o mundo
           da programação, criando interfaces que não apenas funcionam, mas

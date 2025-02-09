@@ -1,6 +1,6 @@
 import AnchorLink from "../../Atoms/AnchorLink";
 import styles from "./styles.module.css";
-import { FaGithub, FaLinkedin, FaInstagram, FaSpotify, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { HiOutlineDocumentArrowDown } from "react-icons/hi2";
 
 export default function FooterNavigation() {
@@ -18,9 +18,6 @@ export default function FooterNavigation() {
         </AnchorLink>
         <AnchorLink path="https://www.instagram.com/joao.araujoo_/">
           <FaInstagram color="#c6c6c6" />
-        </AnchorLink>
-        <AnchorLink path="https://open.spotify.com/user/uxb66upc7ekxdup54a4frat8e?si=992f8ee8344f4d95">
-          <FaSpotify color="#c6c6c6" />
         </AnchorLink>
         <AnchorLink
           path="/CV - João Pedro Araujo Costa.pdf"

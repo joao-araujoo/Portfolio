@@ -1,11 +1,8 @@
 import Particle from "../components/Atoms/Particle/Particle";
 import Header from "../components/Organisms/Header";
 import Main from "../components/Organisms/Main";
-import MusicsContainer from "../components/Molecules/MusicsContainer";
-import MoviesContainer from "../components/Molecules/MoviesContainer";
-import { BiSolidCameraMovie } from "react-icons/bi";
 import { TbCodeDots } from "react-icons/tb";
-import { FaSpotify, FaCode } from "react-icons/fa";
+import { FaCode } from "react-icons/fa";
 import TechnologiesContainer from "../components/Molecules/TechnologiesContainer";
 // import CorinthiansNews from "../components/Atoms/CorinthiansNews";
 
@@ -36,26 +33,7 @@ export default function About() {
           Tecnologias.
           <FaCode />
         </h3>
-        <TechnologiesContainer />
-
-        <h3 className="subtitle">
-          Minhas músicas.
-          <FaSpotify />
-        </h3>
-        <MusicsContainer />
-
-        <h3 className="subtitle" style={{ marginTop: "30px" }}>
-          Meus filmes.
-          <BiSolidCameraMovie />
-        </h3>
-        <MoviesContainer />
-
-        {/* TODO arrumar/remover/procurar outra alternativa para esta seção */}
-        {/* <h3 className="subtitle">
-          Corinthians Now.
-          <img src="/corinthians.svg" alt="" style={{width: "25px" }} />
-        </h3>
-        <CorinthiansNews /> */}
+        <TechnologiesContainer style={{marginBottom: "50px"}} />
       </Main>
     </>
   );

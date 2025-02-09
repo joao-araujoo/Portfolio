@@ -22,9 +22,10 @@ const technologiesData = [
   { id: 8, name: "MongoDB", icon: <SiMongodb size="100" /> },
 ];
 
-export default function TechnologiesContainer() {
+// eslint-disable-next-line react/prop-types
+export default function TechnologiesContainer({ style }) {
   return (
-    <div className={styles.wrapper} style={{ paddingTop: "30px" }}>
+    <div className={styles.wrapper} style={{ padding: "10px", ...style }}>
       {technologiesData.map((technology) => (
         <Technology key={technology.id} name={technology.name}>
           {technology.icon}
