@@ -4,7 +4,7 @@ import Header from "../components/Organisms/Header";
 import Main from "../components/Organisms/Main";
 
 export default function Contact() {
-  document.title = "Contact | João Araujo";
+  document.title = "Contato | João Araujo";
 
   return (
     <>
